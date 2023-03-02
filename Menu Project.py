@@ -3,6 +3,8 @@ import customtkinter
 
 customtkinter.set_appearance_mode("Dark")  # Modes: system (default), light, dark
 customtkinter.set_default_color_theme("blue")  # Themes: blue (default), dark-blue, green
+customtkinter.set_widget_scaling(2)  # widget dimensions and text size
+customtkinter.set_window_scaling(1)  # window geometry dimensions
 
 app = customtkinter.CTk()  # create CTk window like you do with the Tk window
 app.geometry("360x640")
