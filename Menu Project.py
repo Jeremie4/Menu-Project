@@ -21,6 +21,7 @@ def cancel_order():
     ran = True
     main()
 
+
 def place_order():
     global total
     if checkbox_1.get() == 1:
@@ -41,7 +42,8 @@ def place_order():
         total += 1.2
     if checkbox_10.get() == 1:
         total += 2.5
-    
+  
+
     label_4 = customtkinter.CTkLabel(master=app, text=("    Order Placed    \n     Total: $" + str(round(total, 2))), justify=customtkinter.LEFT)
     label_4.place(relx=0.5, rely=0.925, anchor=tkinter.CENTER)
     button = customtkinter.CTkButton(master=app, text="Cancel Order", command=cancel_order)
@@ -57,9 +59,9 @@ def main():
         label_4 = customtkinter.CTkLabel(master=app, text=("Order Cancelled"), justify=customtkinter.LEFT)
         label_4.place(relx=0.5, rely=0.925, anchor=tkinter.CENTER)
 
+    
     button = customtkinter.CTkButton(master=app, text="Place Order", command=place_order)
     button.place(relx=0.5, rely=0.85, anchor=tkinter.CENTER)
-
 
     label_1 = customtkinter.CTkLabel(master=app, text="Main Dishes", justify=customtkinter.LEFT)
     label_1.place(relx=0.5, rely=0.05, anchor=tkinter.CENTER)
